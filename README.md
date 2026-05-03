@@ -25,9 +25,11 @@ MLOps (machine learning operations) is a must-know skill for many data professio
 
 ## How to Take MLOps Zoomcamp
 
-### 2025 Cohort
-- **Start Date**: May 5, 2025
-- **Register Here**: [Sign up](https://airtable.com/shrCb8y6eTbPKwSTL)
+### 2026 Cohort
+
+* We don't plan to offer the course in 2026
+* You can still take it self-paced
+* [**Register Here**](https://airtable.com/shrCb8y6eTbPKwSTL) if you want to receive updates if we decide to run the course
 
 ### Self-Paced Learning
 All course materials are freely available for independent study. Follow these steps:
