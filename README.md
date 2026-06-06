@@ -101,7 +101,7 @@ To get the most out of this course, you should have prior experience with:
 Join the [`#course-mlops-zoomcamp`](https://app.slack.com/client/T01ATQK62F8/C02R98X7DS9) channel on [DataTalks.Club Slack](https://datatalks.club/slack.html) for discussions, troubleshooting, and networking.
 
 To keep discussions organized:
-- Follow [our guidelines](asking-questions.md) when posting questions.
+- Follow [our guidelines](https://datatalks.club/docs/courses/zoomcamp-logistics/asking-questions/) when posting questions.
 - Review the [community guidelines](https://datatalks.club/slack/guidelines.html).
 
 ## Instructors
