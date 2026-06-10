@@ -140,7 +140,7 @@ The [final project](07-project/) integrates everything covered in the course int
 <img src="images/mlops-zoomcamp-certificate.jpg" alt="MLOps Zoomcamp certificate of completion awarded after finishing the final project and peer reviews" title="MLOps Zoomcamp Certificate of Completion" width="500" />
 </p>
 
-Certificates are awarded to learners who complete the final project during a live cohort. After the project is graded, the certificate appears on your course platform dashboard once the instructors issue it, and the release is announced in Slack and Telegram. See the [certificate guide](https://datatalks.club/docs/courses/mlops-zoomcamp/certificate/) for how to get it and add it to LinkedIn.
+Certificates are awarded to learners who complete the final project during a live cohort. After the project is graded, the certificate appears on your course platform dashboard once the instructors issue it, and the release is announced in Slack and Telegram. See the [certificate guide](https://datatalks.club/docs/courses/zoomcamp-logistics/certification/) for how to get it and add it to LinkedIn.
 
 ## Instructors
 
