@@ -136,6 +136,10 @@ The [final project](07-project/) integrates everything covered in the course int
 
 ## Certificate
 
+<p align="center">
+<img src="images/mlops-zoomcamp-certificate.jpg" alt="MLOps Zoomcamp certificate of completion awarded after finishing the final project and peer reviews" title="MLOps Zoomcamp Certificate of Completion" width="500" />
+</p>
+
 Certificates are awarded to learners who complete the final project during a live cohort. After the project is graded, the certificate appears on your course platform dashboard once the instructors issue it, and the release is announced in Slack and Telegram. See the [certificate guide](https://datatalks.club/docs/courses/mlops-zoomcamp/certificate/) for how to get it and add it to LinkedIn.
 
 ## Instructors
@@ -181,7 +185,7 @@ Interested in supporting our community? Reach out to [alexey@datatalks.club](mai
 <a href="https://www.youtube.com/@DataTalksClub/featured">YouTube</a> •
 <a href="https://github.com/DataTalksClub">GitHub</a> •
 <a href="https://www.linkedin.com/company/datatalks-club/">LinkedIn</a> •
-<a href="https://twitter.com/DataTalksClub">Twitter</a>
+<a href="https://x.com/DataTalksClub">X</a>
 </p>
 
 All the activity at DataTalks.Club mainly happens on [Slack](https://datatalks.club/slack.html). We post updates there and discuss different aspects of data, career questions, and more.
