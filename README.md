@@ -34,6 +34,7 @@ Master the fundamentals of MLOps, from training and experimentation to deploymen
 |----------|------|
 | Course materials | [GitHub repository](https://github.com/DataTalksClub/mlops-zoomcamp) |
 | Video lectures | [YouTube playlist](https://www.youtube.com/playlist?list=PL3MmuxUbc_hIUISrluw_A7wDSmfOhErJK) |
+| Documentation | [Zoomcamp Logistics](https://datatalks.club/docs/courses/zoomcamp-logistics/) · [MLOps Zoomcamp](https://datatalks.club/docs/courses/mlops-zoomcamp/) |
 | Course platform (deadlines, homework) | [courses.datatalks.club](https://courses.datatalks.club/) |
 | Slack channel | [#course-mlops-zoomcamp](https://app.slack.com/client/T01ATQK62F8/C02R98X7DS9) |
 | Announcements | [Telegram](https://t.me/dtc_courses) |
@@ -125,7 +126,7 @@ The [final project](07-project/) integrates everything covered in the course int
 
 ## Certificate
 
-Certificates are awarded to learners who complete a project during a live cohort. See [certificate.md](certificate.md) for details.
+Certificates are awarded to learners who complete the final project during a live cohort. After the project is graded, the certificate appears on your course platform dashboard once the instructors issue it, and the release is announced in Slack and Telegram. See the [certificate guide](https://datatalks.club/docs/courses/mlops-zoomcamp/certificate/) for how to get it and add it to LinkedIn.
 
 ## Instructors
 
