@@ -1,0 +1,23 @@
+# Data files
+*.parquet
+*.csv
+
+# Serialized models and preprocessors
+*.pkl
+
+# MLflow local database and artifacts
+mlflow.db
+mlruns/
+artifacts/
+
+# Airflow runtime files
+logs/
+config/airflow.cfg
+
+# Python
+__pycache__/
+*.pyc
+.env
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
