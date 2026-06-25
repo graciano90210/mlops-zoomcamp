@@ -9,6 +9,8 @@ from sklearn.metrics import root_mean_squared_error
 
 DATA_DIR = "/opt/airflow/dags/data"
 TAXI_COLOR = "green"
+MLFLOW_TRACKING_URI = "http://172.18.0.1:5000"
+MLFLOW_EXPERIMENT = "taxi-duration-airflow"
 
 
 def _download_file(year: int, month: int) -> str:
@@ -86,14 +88,25 @@ def taxi_duration_pipeline():
         with open(f"{data_dir}/val.pkl", "rb") as f:
             X_val, y_val = pickle.load(f)
 
-        rf = RandomForestRegressor(max_depth=10, random_state=0, n_jobs=-1)
-        rf.fit(X_train, y_train)
+        import mlflow
+        import mlflow.sklearn
+        mlflow.set_tracking_uri(MLFLOW_TRACKING_URI)
+        mlflow.set_experiment(MLFLOW_EXPERIMENT)
 
-        rmse = root_mean_squared_error(y_val, rf.predict(X_val))
-        print(f"Validation RMSE: {rmse:.4f}")
+        with mlflow.start_run():
+            params = {"max_depth": 10, "random_state": 0, "n_jobs": 1}
+            mlflow.log_params(params)
 
-        with open(f"{data_dir}/model.pkl", "wb") as f:
-            pickle.dump(rf, f)
+            rf = RandomForestRegressor(**params)
+            rf.fit(X_train, y_train)
+
+            rmse = root_mean_squared_error(y_val, rf.predict(X_val))
+            mlflow.log_metric("rmse", rmse)
+            print(f"Validation RMSE: {rmse:.4f}")
+
+            with open(f"{data_dir}/model.pkl", "wb") as f:
+                pickle.dump(rf, f)
+            mlflow.sklearn.log_model(rf, artifact_path="model")
 
         return rmse
 
