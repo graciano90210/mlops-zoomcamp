@@ -107,6 +107,7 @@ def taxi_duration_pipeline():
             with open(f"{data_dir}/model.pkl", "wb") as f:
                 pickle.dump(rf, f)
             mlflow.sklearn.log_model(rf, artifact_path="model")
+            mlflow.log_artifact(f"{data_dir}/dv.pkl", artifact_path="preprocessor")
 
         return rmse
 
