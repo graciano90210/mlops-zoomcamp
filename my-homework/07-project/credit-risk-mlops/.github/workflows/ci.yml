@@ -27,3 +27,6 @@ jobs:
 
       - name: Run tests
         run: pytest tests/ -v
+
+      - name: Build Docker image
+        run: docker build -t credit-risk-api .
