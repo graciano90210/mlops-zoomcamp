@@ -38,7 +38,7 @@ def credit_risk_pipeline():
 
         out_dir = "/opt/airflow/dags/data"
         df.to_parquet(f"{out_dir}/credit_risk_processed.parquet", index=False)
-        with open(f"{out_dir}/credit_risk_scaler.pkl", "wb") as f:
+        with open(f"{out_dir}/scaler.pkl", "wb") as f:
             pickle.dump(scaler, f)
 
         print(f"Dataset: {len(df):,} intervalos, {df['CÓDIGO CRÉDITO'].nunique():,} créditos")
@@ -52,7 +52,7 @@ def credit_risk_pipeline():
         from lifelines.utils import concordance_index
 
         df = pd.read_parquet(f"{data_dir}/credit_risk_processed.parquet")
-        with open(f"{data_dir}/credit_risk_scaler.pkl", "rb") as f:
+        with open(f"{data_dir}/scaler.pkl", "rb") as f:
             scaler = pickle.load(f)
 
         mlflow.set_tracking_uri(MLFLOW_TRACKING_URI)
@@ -81,7 +81,7 @@ def credit_risk_pipeline():
             with open(f"{data_dir}/cox_model.pkl", "wb") as f:
                 pickle.dump(ctv, f)
             mlflow.log_artifact(f"{data_dir}/cox_model.pkl", artifact_path="model")
-            mlflow.log_artifact(f"{data_dir}/credit_risk_scaler.pkl", artifact_path="model")
+            mlflow.log_artifact(f"{data_dir}/scaler.pkl", artifact_path="model")
 
         return c_index
 
